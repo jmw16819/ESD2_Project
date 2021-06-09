@@ -1,0 +1,62 @@
+<!--
+https://github.com/jmw16819/ESD2_Project
+WeFlow - a water leak detection system
+by Jordyn Washington 2021 - MIT License
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeFlow Pressure Monitor</title>
+    <link rel="stylesheet" href="{{ static_url('monitor.css') }}" type="text/css">
+</head>
+
+<body>
+    <div id="main_header">
+        <h1 id="header" title="WeFlow Pressure Monitor">WeFlow Pressure Monitor</h1>
+    </div>
+    <div id="sys_info">
+        <p class="text-center">
+            Welcome to the WeFlow Pressure Monitor! Here you can keep track of the state of the WeFlow, a water leak detection system. Below, water pressure data in PSI from three different sections of piping will be displayed alongside messages about the state of each section. Should a potential leak be detected in one of the sections, that section will automatically close, and the button corresponding to that section below can be used to reopen it.
+        </p>
+    </div>
+    <div id="messages">
+        <p id="s1_mess">
+            Nothing to display for section 1.
+        </p>
+        <p id="s2_mess">
+            Nothing to display for section 2.
+        </p>
+        <p id="s3_mess">
+            Nothing to display for section 3.
+        </p>
+    </div>
+    <div id="buttons">
+        <button type="button" id="b1" title="Close off section 1">Close Section 1</button>
+        <button type="button" id="b2" title="Close off section 2">Close Section 2</button>
+        <button type="button" id="b3" title="Close off section 3">Close Section 3</button>
+    </div>
+    <table id="data_table">
+        <caption>Water Pressure Data</caption>
+        <thead>
+            <tr>
+                <th>Section 1 Pressure (PSI)</th>
+                <th>Section 2 Pressure (PSI)</th>
+                <th>Section 3 Pressure (PSI)</th>
+            </tr>
+            <tr>
+                <td id="s1_data">0.0</td>
+                <td id="s2_data">0.0</td>
+                <td id="s3_data">0.0</td>
+            </tr>
+        </thead>
+    </table>
+
+    <script src="{{ static_url('monitor.js') }}" type="text/javascript"></script>
+</body>
+
+</html>
