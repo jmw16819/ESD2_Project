@@ -4,7 +4,7 @@ The code in this repository was used for the WeFlow, a water leak detection syst
 Everything has been uploaded under the [MIT license](LICENSE). Below are details about each file, and what they're used for.
 
 ### monitor.py
-This Python file was used to create the server used for the WeFlow, which was developed using Tornado Web Server.
+This Python file was used to create the server used for the WeFlow, which was developed using [Tornado Web Server](https://www.tornadoweb.org/en/stable/). It contains the seven WebSocket handles for the different clients, and the code is configured so that the sending of messages to and from the server are done asynchronously to prevent blocking.
 
 ### monitor.js
 This Javascript file provides functionality for the monitor webpage of the system, which is one of the clients connected to the server. Displays pressure data from the system, controls state of solenoid valves, and shows system state messages to the user. Webpage also made with index.html and monitor.css.
