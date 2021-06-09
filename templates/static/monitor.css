@@ -1,0 +1,51 @@
+/*
+https://github.com/jmw16819/ESD2_Project
+WeFlow - a water leak detection system
+by Jordyn Washington 2021 - MIT License
+*/
+
+html {
+    background-color: #60eaea;
+    font-family: "Candara";
+}
+
+#data_table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: floralwhite;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+caption {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+#main_header {
+    text-align: center;
+}
+
+#sys_info {
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 15px;
+}
+
+#messages {
+    text-align: center;
+    font-size: 17px;
+}
+
+#buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
